@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+a{display: block;text-decoration: none;}
+.container{width: 80%;margin: auto;}
+img{filter: brightness(200%s);}
+input{
+    display: block;
+    width: 80%;
+    height: 40%;
+    margin:30px auto;
+    padding: 20px;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: large;
+}
+.pad{padding: 30px;}
+/*==================================================================================*/
+.header{background-color: antiquewhite;position: relative;}
+.item_header{overflow: hidden;}
+.logo{width: 40%;float:left;}
+.nav{width: 60%;float: left;}
+.menu{list-style: none;}
+.list{text-decoration: none;display: inline-block;}
+.header a{padding: 20px;text-transform: uppercase;color: #000;font-weight: bolder;}
+.header input , .header label{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: inherit;
+    padding: 20px;
+}
+.header input{display: none;}
+.header label{
+    background-image: url("menu_icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header input:checked ~ .nav ul{display: block;}
+/*==================================================================================*/
+@media only screen and (min-width: 992px){.header label{display: none;}}
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    /* for phone */
+    .logo{float: none;}
+    .nav{float: none; width: 100%;}
+    .menu{display: none;}
+    .list{display: inline;text-align: center;margin: auto;}
+}
+/*==================================================================================*/
+.home_page{
+    background-image:url("banner3.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+}
+form{
+    margin: 0 40px;
+    width: 40%;
+    position: relative;
+    top: 100px;
+    background-color:rgba(0, 0, 0, .7);
+}
+form h2{color: aliceblue;}
+.btn1{margin:5% 30% ;}
+.btn1:hover{background-color: aliceblue;color: #000;}
+/*==================================================================================*/
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* for labtop */
+    form{width: 100%;margin: 0;padding: 10px;}
+    .btn1{margin:2% 40% ;}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* for taplet */
+    form{width: 100%;margin: 0;padding: 10px;}
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* for phone */
+    .home_page.container{width: 100%;}
+    form{width: 100%;margin: 0;padding: 10px;}
+    .btn1{margin:2% 20% ;}
+
+}
+
+/*==================================================================================*/
+.about{margin:50px 0px;}
+.about_u{overflow: hidden;}
+.about_info{width: 40%;float: left;}
+.about_title{font-size: 2.1rem;margin: 30px 0px;}
+.about_image{width: 60%;float: left;}
+.btn2{margin-top:20px;}
+.btn2:hover{background-color: black;}
+.desc{color: rgba(0, 0, 0, .5);}
+/*==================================================================================*/
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    /* for phone */
+    .about_info{width: 100%;float: none;}
+    .about_image{width: 100%;float:none;}
+    .btn2{margin-bottom:20px;}
+
+
+
+}
+
+/*==================================================================================*/
+.room{text-align: center;background-color: rgb(254, 234, 208);padding: 20px;}
+.room_title{font-size: 2rem;}
+.room_clear{overflow: hidden;}
+.room_item{
+    float: left;
+    width: 30%;
+    margin-bottom: 2%;
+    margin-left:3% ;
+}
+/*==================================================================================*/
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    /* for labtop */
+    .room_item{
+        float: left;
+        width:50%;
+        margin-bottom: 5%;
+        margin-left:0%;
+    }
+    
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* for taplet */
+    .room_item{
+        float: none;
+        width: 100%;
+        margin-bottom: 5%;
+        margin-left:0% ;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* for phone */
+    .room{padding: 0;}
+    .room_title{font-size: 1.4rem;}
+    .room_desc{padding:5px;}
+    .room_item{
+        float: none;
+        width: 100%;
+        margin-bottom: 5%;
+        margin-left:0% ;
+    }
+}
+/*==================================================================================*/
+.gallry{margin-top: 50px;text-align: center;}
+.gallry_clear{overflow: hidden;}
+.gallry_title{font-size: 3rem;}
+.gallry_item{
+    float: left;
+    width: 22.22%;
+    margin-bottom: 2%;
+    margin-left:3% ;
+}
+/*==================================================================================*/
+@media only screen and (min-width: 1025px){
+    .gallry_item{
+        float: left;
+        width: 22.22%;
+        margin-bottom: 2%;
+        margin-left:0% ;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    /* for labtop */
+    .gallry_item{
+        float: left;
+        width: 30%;
+        margin-bottom: 2%;
+        margin-left:2% ;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* for taplet */
+    .gallry_item{
+        float: none;
+        width: 100%;
+        margin-bottom: 2%;
+        margin-left:0% ;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* for phone */
+    .gallry_item{
+        float: none;
+        width: 100%;
+        margin-bottom: 2%;
+        margin-left:0% ;
+    }
+
+}
+
+/*==================================================================================*/
+.Blog{color: aliceblue;text-align: center;margin-bottom: 50px;}
+.Blog h2{font-size: 2.5rem;margin-bottom: 20px;}
+.blog{
+    background: url(blog_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 60px 0 30px 0;
+    margin-top: 60p
+    
+}
+.blog_clear{overflow: hidden;}
+.blog_item{
+
+    float: left;
+    margin-left: 3%;
+    width: 30.33%;
+}
+.blog_titlt{color: antiquewhite;}
+.blog_value{color: red;}
+.blog_desc{color: rgba(240, 255, 255, 0.668);}
+/*==================================================================================*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* for taplet */
+    .blog_item{
+        float:none;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* for phone */
+    .blog_item{
+        float:none;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+/*==================================================================================*/
+.contact form{width: 100%;margin-bottom:150px ;}
+/*==================================================================================*/
+
+/*==================================================================================*/
+.footer{background-color: #0F1521;text-align: center;padding: 50px;color: antiquewhite;}
+/*==================================================================================*/
